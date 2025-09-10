@@ -24,7 +24,7 @@ export class ProductComponent implements OnInit {
     })
   }
   ngOnInit(): void {
-    this.service.getAllProducts().subscribe({//retorna um observable nao bloqueante
+    this.service.getAllProducts().subscribe({
       next: json => this.products = json
     }
     );
